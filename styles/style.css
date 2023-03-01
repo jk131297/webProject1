@@ -17,13 +17,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 5fr 2fr 1fr;
   row-gap: 50px;
-  margin: 30px;
+  margin-top: 40px;
 }
 #imgAvtr {
   height: 400px;
@@ -31,10 +30,11 @@ body {
 }
 .main {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .left-sec {
   align-self: center;
+  width: 55%;
 }
 .left-sec p{
    font-weight: 600;
@@ -122,7 +122,7 @@ button:hover {
 footer{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
     padding: 20px;
 }
 footer p{
@@ -130,7 +130,6 @@ footer p{
 }
 .footer-ul{
     display: flex;
-    align-self: flex-end;
     gap: 40px;
 }
 .footer-ul li a i:hover{
