@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: conic-gradient(
+    #fa9797,
+    orange,
+    #ecec8c,
+    #90f090,
+    #7575f4,
+    #fa9797
+  );
+  /* background-color: #cb7f7f; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr 2fr 1fr;
+  row-gap: 50px;
+  margin: 30px;
+}
+#imgAvtr {
+  height: 400px;
+  width: 400px;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.left-sec {
+  align-self: center;
+}
+.left-sec p{
+   font-weight: 600;
+}
+.left-sec p span{
+    font-weight: 700;
+    font-size: 25px;
+    color: greenyellow;
+ }
+.left-sec h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.left-sec h1 span{
+    color: greenyellow;
+    font-size: 2.5rem;
+}
+.right-sec {
+    display: flex;
+    flex-direction: column;
+  gap: 30px;
+}
+.right-sec-chat{
+    /* justify-self: end; */
+    align-self: center;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.link {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-weight: 600;  
+  
+}
+.link li a{
+    color: rgb(32, 31, 31);
+}
+.link li a:hover {  
+  text-decoration: underline;
+ 
+}
+.logo {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.search-box {
+    gap: 30px;
+    justify-self: end;
+    align-self: flex-end;
+}
+input{
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+button {
+  background-color: #42f33c;
+  padding: 4px 10px;
+  cursor: pointer;
+  color: #3f4544;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-weight: 550;
+  width: fit-content;
+  transition: all;
+  transition-duration: 1500ms;
+}
+
+button:hover {
+  background-color: #d2eafe;
+  border: 1px solid black;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+footer p{
+    font-weight: 600;
+}
+.footer-ul{
+    display: flex;
+    align-self: flex-end;
+    gap: 40px;
+}
+.footer-ul li a i:hover{
+    background-color: #a7f486;
+}
+
+
+@media (max-width: 960px){
+    .main {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+      }
+}
